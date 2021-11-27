@@ -1,0 +1,95 @@
+@import './index.scss';
+
+.card {
+	background-color: $card-bg;
+	padding: 2em;
+	border-radius: $border-radius;
+	max-height: 40em;
+	max-width: 20em;
+
+	&__image {
+		background: url('../images/image-equilibrium.jpg');
+		background-size: auto 100%;
+		width: 100%;
+		height: auto;
+		background-repeat: no-repeat;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			border-radius: $border-radius;
+			height: auto;
+			width: auto;
+		}
+	}
+
+	&__content {
+		h2 {
+			font-weight: $weight-bold;
+			color: $white;
+		}
+
+		p {
+			font-size: $paragraph-fs;
+			font-weight: $weight-thin;
+			color: $primary-soft-blue;
+		}
+	}
+
+	&__detail {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.price,
+		.time {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			gap: 10px;
+			font-weight: $weight-bold;
+			color: $primary-cyan;
+		}
+
+		.time {
+			img {
+				height: 1em;
+				width: 1em;
+			}
+
+			font-weight: $weight-md;
+			color: $primary-soft-blue;
+		}
+	}
+
+	hr {
+		display: block;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid $line;
+		padding: 0;
+	}
+
+	&__attribution {
+		margin-top: 1.5em;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: $border-radius;
+		font-size: $paragraph-fs;
+		font-weight: $weight-md;
+		color: $primary-soft-blue;
+
+		img {
+			border: 2px solid $white;
+			border-radius: 50%;
+			width: 3em;
+			height: 3em;
+		}
+
+		p > span {
+			color: $white;
+		}
+	}
+}

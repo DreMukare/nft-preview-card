@@ -1,0 +1,26 @@
+$mobile: 375px;
+$desktop: 1440px;
+
+$primary-soft-blue: hsl(215, 51%, 70%);
+$primary-cyan: hsl(178, 100%, 50%);
+$main-bg: hsl(217, 54%, 11%);
+$card-bg: hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+$paragraph-fs: 18px;
+$weight-thin: 300;
+$weight-md: 400;
+$weight-bold: 600;
+
+$border-radius: 15px;
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Outfit',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: $main-bg;
+}
