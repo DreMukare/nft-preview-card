@@ -4,24 +4,17 @@
 	background-color: $card-bg;
 	padding: 2em;
 	border-radius: $border-radius;
-	max-height: 40em;
-	max-width: 20em;
+	max-height: 40%;
+	max-width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: -1em 24em 18em 18em $line;
 
-	&__image {
-		background: url('../images/image-equilibrium.jpg');
-		background-size: auto 100%;
+	img {
+		border-radius: $border-radius;
+		height: 100%;
 		width: 100%;
-		height: auto;
-		background-repeat: no-repeat;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		img {
-			border-radius: $border-radius;
-			height: auto;
-			width: auto;
-		}
+		object-fit: contain;
 	}
 
 	&__content {
@@ -92,4 +85,12 @@
 			color: $white;
 		}
 	}
+
+	// @media (max-width: $mobile) {
+	// 	& {
+	// 		padding: 1em;
+	// 		max-height: 30%;
+	// 		max-width: 10%;
+	// 	}
+	// }
 }
