@@ -8,8 +8,12 @@ import avatar from '../images/image-avatar.png';
 const Card = () => {
 	return (
 		<div className='card'>
-			<img src={equilibrium} alt='nft preview' />
-
+			<div className='card__image'>
+				<img src={equilibrium} alt='nft preview' />
+				<div className='overlay'>
+					<img src={iconView} alt='eye' />
+				</div>
+			</div>
 			<section className='card__content'>
 				<h2>Equilibrium #3429</h2>
 				<p>Our Equilibrium collection promotes balance and calm.</p>
