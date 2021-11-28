@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="card"
+  >
+    <div
+      class="card__image"
+    >
+      <img
+        alt="nft preview"
+        src="image-equilibrium.jpg"
+      />
+      <div
+        class="overlay"
+      >
+        <img
+          alt="eye"
+          src="icon-view.svg"
+        />
+      </div>
+    </div>
+    <section
+      class="card__content"
+    >
+      <h2>
+        Equilibrium #3429
+      </h2>
+      <p>
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+    </section>
+    <section
+      class="card__detail"
+    >
+      <div
+        class="price"
+      >
+        <section
+          class="image"
+        >
+          <img
+            alt="Ethereum icon"
+            src="icon-ethereum.svg"
+          />
+        </section>
+        <p>
+          0.041ETH
+        </p>
+      </div>
+      <div
+        class="time"
+      >
+        <img
+          alt="clock icon"
+          src="icon-clock.svg"
+        />
+        <p>
+          3 days left
+        </p>
+      </div>
+    </section>
+    <hr />
+    <section
+      class="card__attribution"
+    >
+      <img
+        alt="Creator of NFT"
+        src="image-avatar.png"
+      />
+      <p>
+        Creation of 
+        <span>
+          Jules Wyvern
+        </span>
+      </p>
+    </section>
+  </div>
+</DocumentFragment>
+`;
