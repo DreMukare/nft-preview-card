@@ -1,0 +1,21 @@
+@import './index.scss';
+
+.attribution {
+	color: $white;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+	a {
+		text-decoration: none;
+		cursor: pointer;
+		color: $primary-soft-blue;
+		transition: all 1s ease-out;
+	}
+
+	a:hover {
+		transform: scale(1.5) translateY(10px);
+		margin: 20px;
+	}
+}

@@ -1,5 +1,4 @@
 @import './index.scss';
-@import './_include_media.scss';
 
 $breakpoints: (
 	phone: 375px,
@@ -8,12 +7,21 @@ $breakpoints: (
 	fullscreen: 1440px,
 );
 
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .card {
+	display: flex;
+	flex-direction: column;
 	background-color: $card-bg;
 	padding: 2em;
 	border-radius: $border-radius;
 	max-height: fit-content;
-	max-width: 75%;
+	max-width: 55%;
 	margin-left: auto;
 	margin-right: auto;
 	box-shadow: 0px 3.5em 2em 0.5em hsl(217, 91%, 8%);
@@ -132,31 +140,4 @@ $breakpoints: (
 			color: $primary-cyan;
 		}
 	}
-}
-
-@media (min-width: $desktop) {
-	.card {
-		max-width: 30%;
-	}
-}
-
-// @media (min-width: $desktop) {
-// 	.card {
-// 		max-width: 70%;
-// 	}
-// }
-
-@include media('<=phone') {
-	max-height: fit-content;
-	max-width: 75%;
-}
-
-@include media('>phone', '<=tablet') {
-	max-height: fit-content;
-	max-width: 30%;
-}
-
-@include media('>=tablet') {
-	max-height: fit-content;
-	max-width: 17%;
 }
